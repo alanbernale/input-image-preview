@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Input Image Preview</title>
+    </head>
+
+    <body>
+        <div class="image-preview__form">
+            <input
+                class="image-preview__input"
+                type="file"
+                name="image"
+                id="image"
+                accept=".jpg,.png"
+            />
+        </div>
+        <div class="image-preview__preview">
+            <div class="image-preview__image">
+                <img
+                    src="/placeholder-1x1.svg"
+                    data-src="/placeholder-1x1.svg"
+                    alt="Image Preview"
+                    id="image_preview"
+                />
+            </div>
+            <div class="image-preview__clean">
+                <span class="image-preview__button" id="image_clean">
+                    Limpiar
+                </span>
+            </div>
+        </div>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

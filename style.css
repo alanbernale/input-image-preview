@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image-preview__form {
+    display: none;
+    margin-bottom: 1rem;
+}
+
+.image-preview__preview {
+    padding: 0.5rem;
+    border: 3px dashed #ccc;
+    border-radius: 1rem;
+}
+
+.image-preview__image {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.image-preview__preview img {
+	width: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.image-preview__preview img:hover {
+    opacity: 0.9;
+    transform: scale(1.06);
+}
+
+.image-preview__clean {
+    text-align: center;
+}
+
+.image-preview__button {
+    cursor: pointer;
+}
